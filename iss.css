@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Righteous&family=Rubik+80s+Fade&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+
+body {
+    
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#map { height: 280px; }
+
+.load {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.latitude,.longitude{
+    display: none;
+}
+
+
+.container {
+    width: 60%;
+    height: 60vh;
+    background: #464e61a2;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: rgb(202, 202, 202) 2px dashed;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.08);
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+    border: rgb(146, 172, 198) 3.5px dashed;
+    font-size: 29px;
+    font-weight: 500;
+    padding: 17px 30px;
+    font-family: "Audiowide", serif;
+
+}
+
+.container .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 30px 40px 30px;
+}
+
+
+.latitude{
+    font-size: 1.5rem;
+    border: 3px dotted #ccc;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 10px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.08);
+
+}
+
+.longitude {
+    font-size: 1.5rem;
+    border: 3px dotted #ccc;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.02);
+
+}
+
+.details label{
+    font-weight: 500;
+}
+
+@media (max-width: 700px){
+    .container {
+        width: 350px;
+    }
+    .container h1{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}

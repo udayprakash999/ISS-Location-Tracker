@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Location Tracker</title>
+    <link rel="shortcut icon" href="satellite.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+
+    
+ <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+ integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+ crossorigin=""></script>
+
+ <link rel="stylesheet" href="iss.css">
+
+</head>
+<body>
+
+
+
+<div class="container">
+    <h1>ISS LOCATION</h1>
+
+
+    <div class="details">
+        <div class="load">Please Wait Loading...</div>
+
+    <div class="latitude">
+        <label>Latitude: </label><span id="lat"></span>
+    </div>
+   
+    <div class="longitude">
+    <label>Longitude: </label><span id="lon"></span>
+    </div>
+
+
+    </div>
+    
+    <div id="map" class="theMap"></div>
+
+</div>
+
+
+    <script src="iss.js"></script>
+</body>
+</html>
